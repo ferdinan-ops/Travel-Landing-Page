@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "circular-std";
+  src: url("/fonts/sans-serif/CircularStd-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular-std";
+  src: url("/fonts/sans-serif/CircularStd-Book.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular-std";
+  src: url("/fonts/sans-serif/CircularStd-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "smith-allison";
+  src: url("/fonts/serif/Smith Allison.ttf");
+}
+
+@layer components {
+  .shadow-button {
+    box-shadow: 0px 20px 20px rgba(65, 214, 199, 0.3);
+  }
+
+  .shadow-button-top {
+    box-shadow: 0px 20px 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .heading-shadow {
+    text-shadow: 0px 11px 6px rgba(0, 0, 0, 0.2);
+  }
+}
