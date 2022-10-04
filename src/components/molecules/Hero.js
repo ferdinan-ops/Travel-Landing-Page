@@ -1,6 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import { ArrowDown, hero } from "../../../public";
+import { ArrowDown } from "../../../public";
 
 export default function Hero() {
   return (

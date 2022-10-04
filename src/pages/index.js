@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Header, Hero, Sections } from "../components";
+import { Footer, Gap, Header, Hero, Sections } from "../components";
+import { desc } from "../config/desc";
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
 
       <Header />
       <Hero />
-      <Sections />
+      <Sections isTop desc={desc.top} />
+      <Gap height={140} />
+      <Sections desc={desc.more} />
+      <Gap height={140} />
+      <Footer />
     </section>
   );
 }
