@@ -2,7 +2,6 @@
 import logo from "./images/logo.svg";
 import hero from "./images/hero.jpg";
 import footerImg from "./images/footer.png";
-import cardTop from "./images/card-top.png";
 
 // icons
 import ArrowDown from "./icons/arrow-down.svg";
@@ -12,4 +11,4 @@ import Twitter from "./icons/twitter.svg";
 import Instagram from "./icons/instagram.svg";
 import Linkedin from "./icons/linkedin.svg";
 
-export { logo, hero, ArrowDown, Cross, footerImg, Facebook, Twitter, Instagram, Linkedin, cardTop };
+export { logo, hero, ArrowDown, Cross, footerImg, Facebook, Twitter, Instagram, Linkedin };

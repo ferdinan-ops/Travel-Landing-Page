@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { ArrowDown } from "../../../public";
 
@@ -14,7 +15,7 @@ export default function Hero() {
           <h1 className="heading-shadow -mt-6 text-[110px] font-black leading-[76%] md:text-[200px] xl:-mt-16 xl:text-[300px]">
             move.
           </h1>
-          <div className="flex max-w-[225px] items-center gap-6 xl:mx-0">
+          <a className="flex max-w-[225px] items-center gap-6 xl:mx-0" href="#see">
             <div className="cursor-pointer">
               <div className="flex h-14 w-14 items-center justify-center rounded-full border border-dashed bg-white/20">
                 <ArrowDown className="mb-6 animate-bounce" />
@@ -23,7 +24,7 @@ export default function Hero() {
             <span className="font-sans text-lg uppercase">
               explore destinations
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </section>

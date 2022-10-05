@@ -13,7 +13,7 @@ export default function Home() {
 
       <Header />
       <Hero />
-      <Sections isTop desc={desc.top} />
+      <Sections isTop desc={desc.top} id="see" />
       <Gap height={140} />
       <Sections desc={desc.more} />
       <Gap height={140} />

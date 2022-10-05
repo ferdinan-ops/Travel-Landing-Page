@@ -51,7 +51,7 @@ export default function Footer() {
               {footerLinks4.map((links, index) => (
                 <li key={index}>
                   <Link href={links.href}>
-                    <a className='hover:underline'>{links.name}</a>
+                    <a className='w-full h-full'>{links.name}</a>
                   </Link>
                 </li>
               ))}

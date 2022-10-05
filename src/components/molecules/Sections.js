@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Card, Gap, Layout } from "../atoms";
 import { cardData } from "../../config/cardData";
 
-export default function Sections({ isTop, desc }) {
+export default function Sections({ isTop, desc, id }) {
   const topDestinations = cardData.filter(datas => datas.top === true);
   const moreDestinations = cardData.filter(datas => datas.more === true);
 
   return (
-    <section className={`min-h-screen bg-gradient-to-b ${isTop && "from-[#00BEAC] via-[#00BEAC] to-[#00BEAC]/0 text-white"}`}>
+    <section className={`min-h-screen bg-gradient-to-b ${isTop && "from-[#00BEAC] via-[#00BEAC] to-[#00BEAC]/0 text-white"}`} id={id}>
       <Layout>
         {isTop && <Gap height={81} />}
         <div className="text-center">
@@ -19,14 +19,14 @@ export default function Sections({ isTop, desc }) {
           <p className="mx-auto max-w-4xl font-sans text-sm md:text-xl font-semibold">{desc}</p>
         </div>
 
-        <div className={`mt-20 font-sans flex justify-between gap-5 ${!isTop && "grid grid-cols-3 grid-rows-2 grid-flow-row-dense"}`}>
+        <div className={`mt-20 font-sans flex flex-wrap gap-y-5 justify-between ${!isTop && "grid gap-5 grid-cols-3 grid-rows-2 grid-flow-row-dense"}`}>
           {isTop ? topDestinations.map((data, index) => (
-            <div className="w-3/12 h-[553px] rounded-xl overflow-hidden" key={index}>
+            <div className="w-full xl:w-[23.8%] md:w-[48.8%] h-[553px] rounded-xl overflow-hidden" key={index}>
               <Card {...data} isTop />
             </div>
           )) :
             moreDestinations.map((data, index) => (
-              <div className={` rounded-xl overflow-hidden text-white ${data.style}`} key={index}>
+              <div className={`rounded-xl overflow-hidden text-white ${data.style}`} key={index}>
                 <Card {...data} />
               </div>
             ))}

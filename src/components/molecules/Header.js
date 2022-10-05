@@ -40,7 +40,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-11 xl:flex">
-            <NavLink href="/sign-in">Sign In</NavLink>
+            <NavLink href="/sign-in" top={top}>Sign In</NavLink>
             <Link href="/sign-up">
               <a
                 className={`rounded-md px-4 py-2 ${top

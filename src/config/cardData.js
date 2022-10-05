@@ -1,10 +1,10 @@
 export const cardData = [
-  { name: "Seinggigi", place: "Lombok", top: true, image: "/images/card-1.png" },
-  { name: "Pangandaran", place: "Pulau Jawa", top: true, image: "/images/card-2.png" },
-  { name: "Kuta", place: "Bali", top: true, image: "/images/card-3.png" },
-  { name: "Parangtritis", place: "Yogyakarta", top: true, image: "/images/card-top.png" },
-  { name: "Parai Tenggiri", place: "Bangka Belitung", more: true, image: "/images/card-4.png", style: "row-span-2" },
-  { name: "Pelabuhan Ratu", place: "Sukabumi", more: true, image: "/images/card-4.png", style: " h-[345px]" },
-  { name: "Bunaken", place: "Manado", more: true, image: "/images/card-4.png", style: " h-[345px]" },
-  { name: "Dreamland", place: "Bali", more: true, image: "/images/card-4.png", style: "col-span-2 w-full h-[345px]" },
+  { name: "Seinggigi", place: "Lombok", top: true, image: "https://images.unsplash.com/photo-1600790314350-3925299bab61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bG9tYm9rfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+  { name: "Pangandaran", place: "Pulau Jawa", top: true, image: "https://images.unsplash.com/photo-1587736613869-97999f28aac2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8amF3YXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" },
+  { name: "Kuta", place: "Bali", top: true, image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFsaXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" },
+  { name: "Parangtritis", place: "Yogyakarta", top: true, image: "https://images.unsplash.com/photo-1580883688613-b2c0f57a1f89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8eW9neWFrYXJ0YXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" },
+  { name: "Parai Tenggiri", place: "Bangka Belitung", more: true, image: "https://images.unsplash.com/photo-1578072206820-379ca833df2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhbmdrYSUyMGJlbGl0dW5nfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60", style: "xl:col-span-1 xl:row-span-2 col-span-3 row-span-auto" },
+  { name: "Pelabuhan Ratu", place: "Sukabumi", more: true, image: "https://images.unsplash.com/photo-1614070885413-9a5c2796a819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN1a2FidW1pfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=80", style: " h-[345px] col-span-3 xl:col-span-1" },
+  { name: "Bunaken", place: "Manado", more: true, image: "https://images.unsplash.com/photo-1582092101811-afa944d271bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuYWRvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=80", style: "h-[345px] col-span-3 xl:col-span-1" },
+  { name: "Dreamland", place: "Bali", more: true, image: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", style: "col-span-3 xl:col-span-2 w-full h-[345px]" },
 ]

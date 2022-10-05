@@ -37,8 +37,8 @@ export const footerLinks3 = [
 ]
 
 export const footerLinks4 = [
-  { href: "https://facebook.com", name: <Facebook className="w-7" /> },
-  { href: "https://twitter.com", name: <Twitter className="w-5" /> },
-  { href: "https://instagram.com", name: <Instagram className="w-5" /> },
-  { href: "https://linkedin.com", name: <Linkedin className="w-5" /> },
+  { href: "https://facebook.com", name: <Facebook /> },
+  { href: "https://twitter.com", name: <Twitter /> },
+  { href: "https://instagram.com", name: <Instagram /> },
+  { href: "https://linkedin.com", name: <Linkedin /> },
 ]
