@@ -1,10 +1,17 @@
-import React, { useEffect, useState } from "react";
 import { Card, Gap, Layout } from "../atoms";
 import { cardData } from "../../config/cardData";
+import { useEffect, useState } from "react";
 
 export default function Sections({ isTop, desc, id }) {
-  const topDestinations = cardData.filter(datas => datas.top === true);
-  const moreDestinations = cardData.filter(datas => datas.more === true);
+  const [topDest, setTopDest] = useState([]);
+  const [moreDest, setMoreDest] = useState([]);
+
+  useEffect(() => {
+    const topDestinations = cardData.filter(datas => datas.top === true);
+    const moreDestinations = cardData.filter(datas => datas.more === true);
+    setTopDest(topDestinations);
+    setMoreDest(moreDestinations);
+  }, [])
 
   return (
     <section className={`min-h-screen bg-gradient-to-b ${isTop && "from-[#00BEAC] via-[#00BEAC] to-[#00BEAC]/0 text-white"}`} id={id}>
@@ -20,14 +27,20 @@ export default function Sections({ isTop, desc, id }) {
         </div>
 
         <div className={`mt-20 font-sans flex flex-wrap gap-y-5 justify-between ${!isTop && "grid gap-5 grid-cols-3 grid-rows-2 grid-flow-row-dense"}`}>
-          {isTop ? topDestinations.map((data, index) => (
+          {isTop ? topDest.map((data, index) => (
             <div className="w-full xl:w-[23.8%] md:w-[48.8%] h-[553px] rounded-xl overflow-hidden" key={index}>
-              <Card {...data} isTop />
+              <Card image={data.image} style="h-[310px] from-black/90 xl:-bottom-full group-hover:bottom-0 bottom-0">
+                <h2 className='text-[40px] font-black'>{data.name}</h2>
+                <p className='font-medium uppercase text-sm'>{data.place}</p>
+              </Card>
             </div>
           )) :
-            moreDestinations.map((data, index) => (
+            moreDest.map((data, index) => (
               <div className={`rounded-xl overflow-hidden text-white ${data.style}`} key={index}>
-                <Card {...data} />
+                <Card image={data.image} style="h-full from-black/60 bottom-0 xl:opacity-0 group-hover:opacity-100 opacity-100">
+                  <h2 className='text-[40px] font-black'>{data.name}</h2>
+                  <p className='font-medium uppercase text-sm'>{data.place}</p>
+                </Card>
               </div>
             ))}
         </div>
