@@ -1,9 +1,9 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "../../public";
 
 export const links = [
-  { href: "#", name: "Home", style: "xl:pr-11" },
-  { href: "#see", name: "Top Destinations", style: "xl:pr-11" },
-  { href: "#more", name: "More Destinations", style: "" },
+  { href: "home", name: "Home", style: "xl:pr-11" },
+  { href: "see", name: "Top Destinations", style: "xl:pr-11" },
+  { href: "more", name: "More Destinations", style: "" },
   { href: "/sign-in", name: "Sign In", style: "xl:hidden xl:px-0" },
   { href: "/sign-up", name: "Sign Up", style: "xl:hidden xl:px-0" },
 ];
